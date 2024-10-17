@@ -1,0 +1,177 @@
+
+.s1{
+  background-color: white;
+  padding: 0;
+}
+
+.s2{
+    background-color: #efe2dc;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+}
+.education {
+    display: grid;
+    grid-template-columns: 2fr 1.3fr;
+    grid-template-rows: 50% ;
+    gap: 30px;
+    padding-top: 200px;
+    padding-bottom: 0;
+    max-width: 1300px;
+    align-items: center;
+    margin: auto;
+}
+
+.experience {
+    display: grid;
+    grid-template-columns: 1.2fr 2fr;
+    gap: 30px;
+    padding-top: 0;
+    max-width: 1300px;
+    align-items: center;
+    margin: auto;
+    margin-top: 0;
+}
+
+.textexperience {
+    order: 2;
+    padding: 30px;
+}
+
+.texteducation p,.textexperience p {
+    padding: 40px;
+    text-align: center;
+}
+
+.listexperience {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows:100px 100px 100px 100px;
+    padding : 50px ;
+    background-color: white;
+    border-radius: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;    
+    font-weight: 400;
+    color: #76665d;
+    border: 2px solid #76665d;
+    box-shadow:6px 6px 20px rgba(118, 102, 93, 0.9);
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+  .listexperience p, 
+  .listeducation p {
+    font-size: 1em;
+  }
+
+.listeducation {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows:100px 100px 100px;
+    padding : 50px ;
+    column-gap: 12px;
+    background-color: #efe2dc;
+    border-radius: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;    
+    font-weight: 400;
+    color: #76665d;
+    border: 2px solid #76665d;
+    box-shadow:6px 6px 20px rgba(118, 102, 93, 0.9);
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap : 30px;
+    padding: 30px;
+    padding-right: 0;
+    margin-right: 300px;
+} 
+
+@media screen and (max-width: 996px) {
+    .texteducation{
+        padding: 30px 40px;
+    }
+
+    .listeducation {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        font-size: 1.5em;  
+    }
+
+    .listexperience {
+        display: flex;
+        flex-direction: column;
+        background-color: #efe2dc;
+        align-items: start;
+        font-size: 1.5em;  
+    }
+
+    .education {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap : 20px;
+        padding : 50px;
+        padding-bottom: 0;
+        padding-top: 80px;
+    }
+  
+    .experience {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap : 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+    }
+    
+    .textexperience {
+        order: 0;
+        padding-bottom: 60px;
+    }
+
+    p {
+        padding: 50px;
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        padding: 50px;
+        align-items: center;
+        margin-right: 0;
+        padding-bottom: 90px;
+       }
+
+    h2 {
+        font-size: 4em;
+        font-weight: 700;
+        padding: 30px;
+       }
+
+    body, .s2{
+        background-color: white;
+    }
+       
+    .logo {
+        display: none;
+    }
+}
